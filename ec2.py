@@ -2,8 +2,13 @@
 """
 Created on Sun Dec  1 17:31:02 2019
 
-@author: hueil
+@author: Hueilin
 """
+#In command prompt:
+#pip install awscli
+#aws configure
+#key in ACCESS_KEY_ID, ACCES_SECRET_KEY, and region name
+
 import boto3
 
 #Create an instance
