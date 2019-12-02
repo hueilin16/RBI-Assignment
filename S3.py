@@ -13,10 +13,10 @@ import boto3
 
 #Upload a file
 s3 = boto3.client('s3')
-s3.meta.upload_file('S3_transfer.txt','Bucket1','S3_script.txt')
+s3.upload_file('S3_transfer.txt','Bucket1','S3_script.txt')
 
 #Download a file
-s3.meta.download_file('Bucket1','S3_script.txt','S3_downloadfile.txt')
+s3.download_file('Bucket1','S3_script.txt','S3_downloadfile.txt')
 
 #Download all the files in a folder
 list=s3.list_objects(Bucket='Bucket1')['Contents']
