@@ -13,10 +13,10 @@ import boto3
 
 #Create an instance
 ec2 = boto3.client('ec2')
-ec2.create_instances(ImageId='ami-12345678',
+ec2.create_instances(ImageId='ami-00eb20669e0990cb4',
     InstanceType='t2.micro',
     MaxCount=123,
-    MinCount=123,)
+    MinCount=123)
 
 #Terminate an instance
-ec2.instances.filter(InstanceIds='instance-id').terminate()
+ec2.instances.filter(InstanceIds='i-0bdcc3840227a4c9e').terminate()
